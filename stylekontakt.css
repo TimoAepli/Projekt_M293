@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    font-size: large;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -37,7 +36,6 @@ nav a img {
     width: 30px;
     height: 30px;
     margin-right: 8px;
-    justify-content: center;
 }
 
 nav a span {
@@ -45,66 +43,52 @@ nav a span {
 }
 
 #content {
-    padding: 100px 200px 20px;
+    padding: 60px 20px 20px;
+    text-align: center;
 }
 
-.intro {
+form {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.intro h1 {
-    font-size: 2em;
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
 }
 
-.intro img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.about-text {
-    max-width: 60%;
-}
-
-.about-text h2 {
-    margin-top: 0;
-}
-
-.about-text p {
-    margin-bottom: 0;
-}
-
-.about-container img {
-    max-width: 45%;
+form input,
+form textarea {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid #ccc;
     box-shadow: 2px 10px 10px #DFCEBC;
+    resize: none;
+    box-sizing: border-box;
 }
 
-.skills-container,
-.tools-container,
-.social-media,
-.projekte-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+form button {
+    margin-top: 20px;
+    padding: 15px;
+    background: #C5A68A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 10px 10px #DFCEBC;
+    transition: background 0.3s ease;
 }
 
-.skill,
-.tool,
-.projekt,
-.social-media a {
-    margin: 20px;
+form button:hover {
+    background: #B08C76;
 }
-
-
 
 @media (min-width: 768px) {
     nav a span,
@@ -112,9 +96,3 @@ nav a span {
         display: inline;
     }
 }
-
-.skill img {
-    width: 91px;
-    height: 130px;
-}
-

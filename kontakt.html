@@ -4,16 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kontakt - Timo Aepli</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="stylekontakt.css">
     </head>
     <body>
         <header>
-            <nav>
-                <a href="index.html#startseite">
+            <nav> <!--abweichung vom Mockup/ andere Navigation, weil andere zu aufwändig in dieser Zeit-->
+                <a href="index.html">
                     <img src="Bilder/nutzer.png" alt="Über mich">
                     <span>Über mich</span>
                 </a>
-                <a href="index.html#faehigkeiten">
+                <a href="faehigkeiten.html">
                     <img src="Bilder/die-gluhbirne.png" alt="Fähigkeiten">
                     <span>Fähigkeiten</span>
                 </a>
@@ -29,7 +29,6 @@
         </header>
 
         <div id="content">
-            <!-- Kontakt -->
             <section id="kontakt">
                 <h2>Kontaktiere mich!</h2>
                 <p>Bei jeglichen Fragen, Anliegen oder Rückmeldungen, darfst du dich über die unterstehende Vorlage bei mir melden! Ich freue mich auf jede Nachricht.</p>
@@ -39,13 +38,17 @@
 
                     <input type="email" id="email" name="email" placeholder="Email" required>
 
-                    <input type="text" name="message" placeholder="Nachricht" required>
-
                     <input type="tel" id="phone" name="phone" placeholder="Telefonnummer" required>
+                    
+                    <textarea type="text" name="message" placeholder="Nachricht" required></textarea>
 
                     <button type="submit">Senden</button>
                 </form>
             </section>
         </div>
+
+        <footer>
+            
+        </footer>
     </body>
 </html>
