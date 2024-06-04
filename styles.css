@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #E0E0E0;
+    color: #333;
+}
+
+header {
+    background-color: #DFCEBC;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+nav a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+nav a span {
+    display: none;
+}
+
+#content {
+    padding: 60px 200px 20px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro h1 {
+    font-size: 2em;
+}
+
+.intro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-text {
+    max-width: 60%;
+}
+
+.about-text h2 {
+    margin-top: 0;
+}
+
+.about-text p {
+    margin-bottom: 0;
+}
+
+.about-container img {
+    max-width: 35%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.skills-container,
+.tools-container,
+.social-media,
+.projekte-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill,
+.tool,
+.projekt,
+.social-media a {
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 300px 0;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+
+
+form input,
+form textarea {
+    margin-top: 5px;
+    width: 100%;
+    /* max-width: 400px; */
+    border-radius: 4px;
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 0;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #333;
+    color: #E0E0E0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+
+@media (min-width: 768px) {
+    nav a span,
+    .nav-item span {
+        display: inline;
+    }
+}
+
